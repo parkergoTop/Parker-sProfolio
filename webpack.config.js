@@ -7,9 +7,14 @@ module.exports={
     entry: './src/index.js', 
     output:{
         path:path.join(__dirname,'/dist'),
-        filename:'bundle.js',
+        filename:'[name].js',
         publicPath: '/',
+        sourceMapFilename: "[name].js.map"
     },
+    devtool: "eval-source-map",
+
+    devServer: {
+        historyApiFallback: true},
     // tell webpack the name and location of our bundle file that will be generated whn we produce a production build
     //we pass the "output" obeject
     // Remember that webpack is a module bundler meanings it takes a group of file and budles them into a smaller groups of file
