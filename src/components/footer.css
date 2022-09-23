@@ -1,0 +1,24 @@
+.footer{
+    background-color:  #2a3842 ;
+    color: white;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+ 
+    
+}
+
+.socialMedia{
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialMedia svg{
+    font-size: 38px;
+    cursor: pointer;
+    margin: 20px 30px;
+}

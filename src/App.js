@@ -7,12 +7,15 @@ import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Projects from "./pages/Projects"
 import Navbar  from "./components/Navbar"
+import Footer from "./components/Footer"
 
 export default function App (){
    return <div className="App">
        
       <Router>
          <Navbar />
+
+         
         <Routes>
              
             <Route  path= "/" element= {<Home/>}/>
@@ -20,6 +23,9 @@ export default function App (){
             <Route  path= "/experience" element= {<Experience/>}/>
            
         </Routes>
+
+
+         <Footer/>
       </Router>
    </div>
 
