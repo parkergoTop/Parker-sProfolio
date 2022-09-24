@@ -3,7 +3,8 @@ import React from "react"
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn"
 import  EmailIcon from "@material-ui/icons/Email"
-import GithubIcon from "@material-ui/icons/GitHub"
+
+import InstagramIcon from "@material-ui/icons/Instagram"
 
 
 export default function Footer(){
@@ -12,7 +13,7 @@ export default function Footer(){
           <div className="socialMedia"> 
             <LinkedInIcon/>
             <EmailIcon/>
-            <GithubIcon/>
+            <InstagramIcon/>
           </div>
 
         </div>
