@@ -8,13 +8,18 @@ import SkillsCard from "../components/SkillsCard";
 
 import "./home.css"
 
+import cssIcon from "../images/css.svg"
+import htmlIcon from "../images/html.svg"
+//import JSIcon from "../images/JS.svg"
+import ReactIcon from "../images/reactjs.svg"
+
 
 export default function Home(){
      
     //skills data   {category: "Front-end", skills : [ {}, {} , {}]}
 
     const frontendSkills = {category: "Front End", skills : [
-                                                              {icon: "", skill: "CSS( + SASS)"}, {icon: "", skill: "HTML"}, {icon: "", skill: "JS (Valinna, ES6+)"} , {icon: "", skill: "React"}
+                                                              {icon: {cssIcon}, skill: "CSS (& SASS)"}, {icon: {htmlIcon}, skill: "HTML"}, {icon: {}, skill: "JS (Valinna, ES6+)"} , {icon:{reactIcon} , skill: "React"}
                                                                   ]}
 
     return <div className ="homePage"> 

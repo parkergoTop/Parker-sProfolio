@@ -1,13 +1,14 @@
 import "./skillsCard.css"
 import React from "react"
 
+import cssIcon from "../images/css.svg"
 export default function skillsCard(props){
 
     function setSkillCard(){
         const skills = []
         for(let i = 0; i < props.skills.length; i ++){
-
-           skills.push(<li> {props.skills[i].icon} {props.skills[i].skill}</li>)
+         
+           skills.push(<li> {props.skills[i].skill}</li>)
         }
 
         return skills
@@ -20,6 +21,7 @@ export default function skillsCard(props){
                <ul className="skills-list"> 
                     {setSkillCard()}
                </ul>
+               <img src={cssIcon}/>
 
         </div>
       )
