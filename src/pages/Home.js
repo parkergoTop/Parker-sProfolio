@@ -8,10 +8,11 @@ import SkillsCard from "../components/SkillsCard";
 
 import "./home.css"
 
-import cssIcon from "../images/css.svg"
-import htmlIcon from "../images/html.svg"
-//import JSIcon from "../images/JS.svg"
-import ReactIcon from "../images/reactjs.svg"
+import cssIcon from "../images/css.png"
+import htmlIcon from "../images/html.png"
+import JSIcon from "../images/js.png"
+import reactIcon from "../images/react.png"
+
 
 
 export default function Home(){
@@ -19,10 +20,10 @@ export default function Home(){
     //skills data   {category: "Front-end", skills : [ {}, {} , {}]}
 
     const frontendSkills = {category: "Front End", skills : [
-                                                              {icon: {cssIcon}, skill: "CSS (& SASS)"}, {icon: {htmlIcon}, skill: "HTML"}, {icon: {}, skill: "JS (Valinna, ES6+)"} , {icon:{reactIcon} , skill: "React"}
+                                                              {icon: cssIcon, skill: "CSS (& SASS)"}, {icon: htmlIcon, skill: "HTML"}, {icon: JSIcon, skill: "JS (Valinna, ES6+)"} , {icon:reactIcon , skill: "React"}
                                                                   ]}
 
-    return <div className ="homePage"> 
+    return <div className ="home-page"> 
          
          <div className="about">
 
@@ -41,13 +42,25 @@ export default function Home(){
                 <div className="email-detail">  <EmailIcon/>  parkerciao@gmail.com </div>
                 <div className="github-detail">    <GithubIcon/> https://github.com/parkergoTop</div>
              </div>
+             
          </div>
 
 
          <div className="skills"> 
-             <SkillsCard key= {frontendSkills.category}
+             <SkillsCard
+                         key= {frontendSkills.category}
                          skills={frontendSkills.skills}/>
 
+              <SkillsCard
+                         key= {frontendSkills.category}
+                         skills={frontendSkills.skills}/>
+
+             <SkillsCard
+                         key= {frontendSkills.category}
+                         skills={frontendSkills.skills}/>
+
+
          </div>
+         
     </div>
 }
