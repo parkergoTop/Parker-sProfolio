@@ -1,11 +1,16 @@
 .home-page{
-    display: relative;
+  
+   margin-top: 2px;
+   background:#F2F5FA;
+    z-index: -1;
 }
 
 .about{
+  
     display: flex;
     justify-content: center;
-    background-color: #808f9b;
+    color: black;
+ 
 }
 
 .left-col-about{
@@ -13,12 +18,13 @@
 }
 
 .right-col-about{
-    padding-top:20px;
+    padding-top:10px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     
     margin-left:30px;
+    font-size:18px;
 
 }
 
@@ -28,6 +34,12 @@ p{
 
 .skills{
     display: flex;
-    background-color: #90abbf;
     
+    
+    justify-content: center;
+    
+}
+
+hr{
+    border-top: 1px solid #b6b9e3;;
 }

@@ -25,6 +25,8 @@ export default function Home(){
 
     return <div className ="home-page"> 
          
+         <hr/>
+         
          <div className="about">
 
             <div className="left-col-about">
@@ -32,7 +34,7 @@ export default function Home(){
             <h2 className="name">Parker Ciao </h2>
             </div >
 
-
+         
              <div className="right-col-about">
                 <p> Software Engineer</p>
                 <p> Bachelor of Science in IT with Distinction, University of Technology Sydney</p>
@@ -45,7 +47,7 @@ export default function Home(){
              
          </div>
 
-
+         <hr/>
          <div className="skills"> 
              <SkillsCard
                          key= {frontendSkills.category}

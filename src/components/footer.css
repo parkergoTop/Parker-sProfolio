@@ -1,6 +1,6 @@
 .footer{
-    background-color:  #2a3842 ;
-    color: white;
+    background-color:  #d1ddff ;
+    color: #63561a;
 
    
     
@@ -13,7 +13,7 @@
 }
 
 .socialMedia svg{
-    font-size: 38px;
+    font-size: 32px;
     cursor: pointer;
-    margin: 20px 30px;
+    margin: 16px 30px;
 }
