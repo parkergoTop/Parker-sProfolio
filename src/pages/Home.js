@@ -1,5 +1,11 @@
 import React from "react";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+
+
 import GithubIcon from "@material-ui/icons/GitHub"
 import  EmailIcon from "@material-ui/icons/Email"
 import PhoneIcon from "@material-ui/icons/Phone"
@@ -15,6 +21,7 @@ import reactIcon from "../images/react.png"
 
 
 
+
 export default function Home(){
      
     //skills data   {category: "Front-end", skills : [ {}, {} , {}]}
@@ -26,7 +33,7 @@ export default function Home(){
     return <div className ="home-page"> 
          
          <hr/>
-         
+
          <div className="about">
 
             <div className="left-col-about">
@@ -49,17 +56,37 @@ export default function Home(){
 
          <hr/>
          <div className="skills"> 
-             <SkillsCard
+             
+             <Swiper navigation={true} modules={[Navigation]} >
+                <SwiperSlide className="myswiper">
+                    
+                     <SkillsCard
                          key= {frontendSkills.category}
                          skills={frontendSkills.skills}/>
 
-              <SkillsCard
+                     <SkillsCard
                          key= {frontendSkills.category}
                          skills={frontendSkills.skills}/>
 
-             <SkillsCard
+                      <SkillsCard
                          key= {frontendSkills.category}
                          skills={frontendSkills.skills}/>
+ 
+                </SwiperSlide>
+
+                <SwiperSlide className="myswiper">
+                     <SkillsCard
+                         key= {frontendSkills.category}
+                         skills={frontendSkills.skills}/>
+
+                     <SkillsCard
+                         key= {frontendSkills.category}
+                         skills={frontendSkills.skills}/>
+                </SwiperSlide>
+                
+                
+                
+             </Swiper>
 
 
          </div>

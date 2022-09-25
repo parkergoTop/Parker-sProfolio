@@ -6,7 +6,7 @@
 }
 
 .about{
-  
+
     display: flex;
     justify-content: center;
     color: black;
@@ -32,12 +32,12 @@ p{
     margin: 8px 0;
 }
 
-.skills{
+
+
+.myswiper{
     display: flex;
-    
-    
+    flex-direction: row;
     justify-content: center;
-    
 }
 
 hr{
