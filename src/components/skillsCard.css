@@ -34,6 +34,7 @@
 
 .skill-element{
     display: flex;
+    margin-top: 0.5rem;
     column-gap: 10px;
 }
 

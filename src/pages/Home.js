@@ -16,19 +16,19 @@ import SkillsCard from "../components/SkillsCard";
 
 import "./home.css"
 
-import cssIcon from "../images/css.png"
-import htmlIcon from "../images/html.png"
-import JSIcon from "../images/js.png"
-import reactIcon from "../images/react.png"
-import javaIcon from "../images/java.png"
-import gitIcon from "../images/git.png"
-import jspIcon from "../images/jsp.png"
-import springIcon from "../images/springboot.png"
-import sqlIcon from "../images/sql.png"
-import jiraIcon from "../images/jira.png"
-import androidIcon from "../images/android.png"
-import agileIcon from "../images/agile.png"
-import jenkinsIcon from "../images/jenkins.png"
+import cssIcon from "../images/icons/css.png"
+import htmlIcon from "../images/icons/html.png"
+import JSIcon from "../images/icons/js.png"
+import reactIcon from "../images/icons/react.png"
+import javaIcon from "../images/icons/java.png"
+import gitIcon from "../images/icons/git.png"
+import jspIcon from "../images/icons/jsp.png"
+import springIcon from "../images/icons/springboot.png"
+import sqlIcon from "../images/icons/sql.png"
+import jiraIcon from "../images/icons/jira.png"
+import androidIcon from "../images/icons/android.png"
+import agileIcon from "../images/icons/agile.png"
+import jenkinsIcon from "../images/icons/jenkins.png"
 
 
 export default function Home(){
@@ -47,7 +47,7 @@ export default function Home(){
                                                                                 ]}
 
     const cs = {category: "CS Essentials", skills : [
-                                                       {icon: "", skill: "Computor Netwroking HTTP/TCP"}, {icon: "", skill: "Data Structure & Algorithm"}, {icon: "", skill: "Unix/Linix"} , {icon:"", skill: "Data Analytics & Neural Network"},
+                                                       {icon: "", skill: "Computor Netwroking HTTP/TCP"}, {icon: "", skill: "Data Structure & Algorithm"}, {icon: "", skill: "Unix/Linix"} , {icon:"#", skill: "Data Analytics & Neural Network"},
                                                                                                                 ]}
     return <div className ="home-page"> 
          
@@ -102,7 +102,7 @@ export default function Home(){
                 <SwiperSlide className="myswiper">
                      <SkillsCard
                          key= {cs.category}
-                         title={cs.category}
+                         title={frontendSkills.category}
                          skills={cs.skills}/>
 
                 </SwiperSlide>
