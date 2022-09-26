@@ -1,8 +1,23 @@
 .project-item{
-    margin:20px 20px
+    margin:20px 30px;
+    width: 480px;
+    text-align: justify;
+    background-color: #b5d3ea;
+    border-radius: 3rem;
 }
 
 .project-img{
-    width: 320px;
+   
+   
+    width: 350px;
+    height:260px;
+    margin-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
     
+}
+
+.project-title{
+    text-align: center;
 }

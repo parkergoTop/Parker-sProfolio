@@ -47,7 +47,7 @@ export default function Home(){
                                                                                 ]}
 
     const cs = {category: "CS Essentials", skills : [
-                                                       {icon: "", skill: "Computor Netwroking HTTP/TCP"}, {icon: "", skill: "Data Structure & Algorithm"}, {icon: "", skill: "Unix/Linix"} , {icon:"#", skill: "Data Analytics & Neural Network"},
+                                                       {icon: "", skill: "Computor Netwroking HTTP/TCP"}, {icon: "", skill: "Data Structure & Algorithm"}, {icon: "", skill: "Unix/Linix"} , {icon:"", skill: "Data Analytics & Neural Network"},
                                                                                                                 ]}
     return <div className ="home-page"> 
          
@@ -102,7 +102,7 @@ export default function Home(){
                 <SwiperSlide className="myswiper">
                      <SkillsCard
                          key= {cs.category}
-                         title={frontendSkills.category}
+                         title={cs.category}
                          skills={cs.skills}/>
 
                 </SwiperSlide>

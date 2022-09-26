@@ -1,0 +1,11 @@
+.projects{
+    display: flex;
+    flex:1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-page-title{
+    margin: 2rem 3rem;
+    color: #373E98;
+}

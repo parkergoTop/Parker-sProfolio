@@ -33,8 +33,10 @@ export default function ProjectItem({title,images}){
     
     return(
         <div className="project-item">
+             
              {displayImages()} 
-             <h1>{title}</h1>
+             
+             <h3 className="project-title">{title}</h3>
         </div>
     )
 }
