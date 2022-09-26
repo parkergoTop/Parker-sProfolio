@@ -102,7 +102,7 @@ export default function Home(){
                 <SwiperSlide className="myswiper">
                      <SkillsCard
                          key= {cs.category}
-                         title={frontendSkills.category}
+                         title={cs.category}
                          skills={cs.skills}/>
 
                 </SwiperSlide>

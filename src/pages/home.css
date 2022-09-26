@@ -18,6 +18,10 @@
  
 }
 
+.name{
+    color: rgb(162, 150, 42);
+}
+
 .left-col-about{
     padding-top: 95px;
 }
