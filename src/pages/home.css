@@ -1,7 +1,7 @@
 .home-page{
   
    margin-top: 2px;
-   background:#d2dbea;
+   background:#eff5ff;
     z-index: -1;
 }
 
@@ -16,6 +16,11 @@
     justify-content: center;
     color: black;
  
+}
+
+.about p {
+    padding: 0;
+    margin: 3px;;
 }
 
 .name{
@@ -37,9 +42,7 @@
 
 }
 
-p{
-    margin: 8px 0;
-}
+
 
 
 .skills{
