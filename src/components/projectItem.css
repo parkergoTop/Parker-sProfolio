@@ -4,6 +4,7 @@
     text-align: justify;
     background-color: #b5d3ea;
     border-radius: 3rem;
+    cursor: pointer;
 }
 
 .project-img{

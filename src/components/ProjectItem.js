@@ -1,4 +1,5 @@
 import React from "react";
+import {useNavigate} from "react-router-dom"
 
 import "./projectItem.css"
 
@@ -12,9 +13,12 @@ import "swiper/css/pagination";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 
-export default function ProjectItem({title,images}){
+export default function ProjectItem({title,images, index}){
+
+    const navigate = useNavigate();
      
    function displayImages(){
+    console.log(index)
 
     return (
     
@@ -32,7 +36,7 @@ export default function ProjectItem({title,images}){
    }
     
     return(
-        <div className="project-item">
+        <div className="project-item" onClick={() => {navigate("/project/" + index)}}>
              
              {displayImages()} 
              

@@ -10,7 +10,7 @@ export default function Projects(){
     
     function displayProjects(){
       console.log(projectList)
-      return (projectList.map(element => { return (<ProjectItem title={element.title} images={element.images}/>)}))
+      return (projectList.map((element, index) => { return (<ProjectItem title={element.title} images={element.images} index={index}/>)}))
     }
 
 
