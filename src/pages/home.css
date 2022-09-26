@@ -1,12 +1,17 @@
 .home-page{
   
    margin-top: 2px;
-   background:#F2F5FA;
+   background:#d2dbea;
     z-index: -1;
 }
 
-.about{
+.home-title{
+    margin:2rem 3rem;
+    color:#373E98;
+}
 
+.about-content{
+    
     display: flex;
     justify-content: center;
     color: black;
@@ -33,13 +38,21 @@ p{
 }
 
 
-
+.skills{
+    margin-top: 3px;
+}
 .myswiper{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 3rem;
 }
 
 hr{
     border-top: 1px solid #b6b9e3;;
+}
+
+.swiper{
+    margin-right: 60px;
+    margin-left: 60px;
 }

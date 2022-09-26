@@ -1,8 +1,7 @@
 .skill-card{
    display: flex;
    flex-direction: column;
-   justify-content: center;
-   align-items: center;
+   align-items: left;
 
    
     background-color: #b5d3ea;
@@ -21,7 +20,24 @@
     list-style: none;
 }
 
-.skill-image{
+#skill-image{
     height: 30px;
-    padding-right: 15px;
+    width: 30px;
+   
+    border-radius: 15px;
+    
+}
+
+#no-skill-image{
+    display: none;
+}
+
+.skill-element{
+    display: flex;
+    column-gap: 10px;
+}
+
+.skill-card-title{
+   display: block;
+   text-align: left;
 }
