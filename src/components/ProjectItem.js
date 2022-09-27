@@ -1,7 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom"
 
-import "./projectItem.css"
+import "../css/projectItem.css"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

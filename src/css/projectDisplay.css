@@ -1,0 +1,38 @@
+
+.project-title{
+    color: #373E98;
+}
+
+.project-slide{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.project-img{
+    width: 70%;
+    height: 70%;
+   
+}
+
+.github{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#373E98;
+    font-size: 20px;
+}
+
+.github-icon{
+    margin-right: 10px;
+}
+
+.project-skills{
+    color:#373E98;
+    text-align: center;
+}
+
+
+
+

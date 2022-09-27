@@ -1,4 +1,6 @@
-import "./skillsCard.css"
+
+import "../css/skillsCard.css"
+
 import React from "react"
 
 

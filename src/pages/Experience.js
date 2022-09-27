@@ -11,7 +11,8 @@ import { Work } from "@material-ui/icons";
 import "react-vertical-timeline-component/style.min.css"
 
 
-import "./experience.css"
+
+import "../css/experience.css"
 
 export default function Experience(){
     return <div className="experience"> 

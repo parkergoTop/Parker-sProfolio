@@ -3,7 +3,8 @@ import React from "react"
 import ProjectItem from "../components/ProjectItem"
 import { projectList } from "../helpers/ProjectList"
 
-import "./project.css"
+
+import "../css/project.css"
 
 export default function Projects(){
    

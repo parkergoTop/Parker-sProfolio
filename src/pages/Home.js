@@ -14,7 +14,8 @@ import PhoneIcon from "@material-ui/icons/Phone"
 
 import SkillsCard from "../components/SkillsCard";
 
-import "./home.css"
+
+import "../css/home.css"
 
 import cssIcon from "../images/icons/css.png"
 import htmlIcon from "../images/icons/html.png"

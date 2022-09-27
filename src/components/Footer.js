@@ -1,4 +1,6 @@
-import "./footer.css"
+
+import "../css/footer.css"
+
 import React from "react"
 
 import LinkedInIcon from "@material-ui/icons/LinkedIn"

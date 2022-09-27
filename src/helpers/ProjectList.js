@@ -11,7 +11,7 @@ import Android1P3 from "../images/projects/EmergencyReporter/a3.png"
 
 
 export const projectList = [
-    {title:"Quizzical", images: [ React1P1, React1P2, React1P3, React1P4, React1P5,React1P6], skills: "HTML CSS/SASS Javascript React"}, 
+    {title:"Quizzical", images: [ React1P1, React1P2, React1P3, React1P4, React1P5,React1P6], skills: "Techniques: HTML CSS/SASS Javascript React"}, 
     
-    {title: "Emergency Reporter", images: [Android1P1,Android1P2,Android1P3], skills: "Android Java  SQL/LiteSQL   "}
+    {title: "Emergency Reporter", images: [Android1P1,Android1P2,Android1P3], skills: "Techniques: Android Java  SQL/LiteSQL   "}
 ]
