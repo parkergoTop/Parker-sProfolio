@@ -13,7 +13,9 @@ import Navbar  from "./components/Navbar"
 import Footer from "./components/Footer"
 
 export default function App (){
-   return <div className="app">
+   return(
+   <div className="container">
+      <div className="app">
        
       <Router>
          <Navbar />
@@ -29,8 +31,9 @@ export default function App (){
         </Routes>
 
 
-         <Footer/>
+         
       </Router>
-   </div>
-
+       </div>
+       <Footer/>
+   </div>)
 }

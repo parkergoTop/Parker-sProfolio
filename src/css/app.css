@@ -1,9 +1,13 @@
-.app{
-    
-    position: relative;
+.container{
+       min-height: 90vh;
+        position: relative;
+       
 }
 
+
+
 body{
+   
     margin: 0;
     padding: 0;
 }
