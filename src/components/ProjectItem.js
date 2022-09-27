@@ -15,10 +15,10 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
 
 export default function ProjectItem({title,images, index}){
 
-    const navigate = useNavigate();
+ const navigate = useNavigate();
      
    function displayImages(){
-    console.log(index)
+   
 
     return (
     
@@ -27,7 +27,7 @@ export default function ProjectItem({title,images, index}){
              modules={[Navigation, Pagination, Mousewheel, Keyboard]}  className="mySwiper">
 
      
-          {images.map(element => {return <SwiperSlide> <img className="project-img" src={element}/>  </SwiperSlide>})}
+          {images.map(element => {return <SwiperSlide className="project-images"> <img className="project-img" src={element}/>  </SwiperSlide>})}
                
         
       </Swiper>
@@ -36,11 +36,11 @@ export default function ProjectItem({title,images, index}){
    }
     
     return(
-        <div className="project-item" onClick={() => {navigate("/project/" + index)}}>
+        <div className="project-item" >
              
              {displayImages()} 
              
-             <h3 className="project-title">{title}</h3>
+             <h3 className="project-title" onClick={() => {navigate("/project/" + index)}}>{title}</h3>
         </div>
     )
 }

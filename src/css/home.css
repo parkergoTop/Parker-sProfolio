@@ -1,8 +1,6 @@
 .home-page{
-  
    margin-top: 2px;
-   background:#eff5ff;
-    z-index: -1;
+   z-index: -1;
 }
 
 .home-title{
@@ -10,17 +8,15 @@
     color:#373E98;
 }
 
-.about-content{
-    
+.about-content{    
     display: flex;
     justify-content: center;
     color: black;
- 
 }
 
 .about p {
     padding: 0;
-    margin: 3px;;
+    margin:0.5rem;
 }
 
 .name{
@@ -62,4 +58,27 @@ hr{
 .swiper{
     margin-right: 60px;
     margin-left: 60px;
+}
+
+.contacts{
+    color: rgb(96, 92, 92);
+}
+
+@media only screen and (min-width: 600px){
+    #phone{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .about{
+        margin:  1rem;
+    }
+
+     #browser{
+        display:none;
+     }
+
+     
 }

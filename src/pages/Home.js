@@ -52,34 +52,35 @@ export default function Home(){
                                                                                                                 ]}
     return <div className ="home-page"> 
          
-         <hr/>
 
         <div className="about">
            <h2 className="home-title"> About </h2>
            <div className="about-content">
               <div className="left-col-about">
-              <img className="selfie" src= "#" />
+
               <h2 className="name">Parker Ciao </h2>
               </div >
 
          
                <div className="right-col-about">
-                  <p> Software Engineer</p>
+                  <p> Full Stack Software Engineer</p>
                   <p> Bachelor of Science in IT with Distinction, University of Technology Sydney</p>
                   <p> Was working for HSBC</p>
                   <p> Passionate Creator,  Quick Learner</p>
+                <div className="contacts">
                   <div className="phone-detail">  <PhoneIcon/>   +61 0404842938 </div>
                   <div className="email-detail">  <EmailIcon/>  parkerciao@gmail.com </div>
-                  <div className="github-detail">    <GithubIcon/> https://github.com/parkergoTop</div>
+                  <div className="github-detail"> <GithubIcon/> https://github.com/parkergoTop</div>
+                </div>
              </div>
         </div>
              
          </div>
 
          <hr/>
-         <div className="skills"> 
+         <div className="skills" id="browser"> 
           <h2 className="home-title"> Skills </h2>
-         <Swiper  cssMode={true}  navigation={true} pagination={true} mousewheel={true} keyboard={true}
+           <Swiper  cssMode={true}  navigation={true} pagination={true} mousewheel={true} keyboard={true}
                modules={[Navigation, Pagination, Mousewheel, Keyboard]}className="mySwiper" >
                 <SwiperSlide className="myswiper">
                     
@@ -105,15 +106,63 @@ export default function Home(){
                          key= {cs.category}
                          title={cs.category}
                          skills={cs.skills}/>
-
-                </SwiperSlide>
-                
-                
+                </SwiperSlide>     
                 
              </Swiper>
 
+         </div>
+
+
+
+
+
+
+         <div className="skills" id="phone"> 
+          <h2 className="home-title"> Skills </h2>
+           <Swiper  cssMode={true}  navigation={true} pagination={true} mousewheel={true} keyboard={true}
+               modules={[Navigation, Pagination, Mousewheel, Keyboard]}className="mySwiper" >
+            
+            
+            
+               <SwiperSlide className="myswiper">
+               
+                   <SkillsCard
+                         key= {frontendSkills.category}
+                         title={frontendSkills.category}
+                         skills={frontendSkills.skills}/>
+               </SwiperSlide>  
+
+
+
+
+                <SwiperSlide className="myswiper">
+
+                   <SkillsCard
+                         key= {backendSkills.category}
+                         title={backendSkills.category}
+                         skills={backendSkills.skills}/>
+
+
+                </SwiperSlide>  
+
+                <SwiperSlide className="myswiper">
+
+                   <SkillsCard
+                         key= {tools.category}
+                         title={tools.category}
+                         skills={tools.skills}/>
+
+                </SwiperSlide>  
+
+                <SwiperSlide className="myswiper">
+                     <SkillsCard
+                         key= {cs.category}
+                         title={cs.category}
+                         skills={cs.skills}/>
+                </SwiperSlide>     
+                
+             </Swiper>
 
          </div>
-         
     </div>
 }

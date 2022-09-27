@@ -29,7 +29,7 @@ export default function ProjectDisplay(){
           {project.images.map(element => {return <SwiperSlide className="project-slide" > <img className="project-img" src={element}/>  </SwiperSlide>})}
                
         </Swiper>
-        <div className="github"> <GitHubIcon className ="github-icon"/> Check on Github </div>
+        <div className="github" onClick={() => {window.open(project.github)}}><GitHubIcon className ="github-icon"/> Check on Github </div>
         <h3 className="project-skills"> {project.skills}</h3>
      </div>
 }

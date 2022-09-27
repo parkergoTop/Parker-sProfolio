@@ -20,8 +20,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#373E98;
+    color: rgb(162, 150, 42);
     font-size: 20px;
+    cursor: pointer;
 }
 
 .github-icon{
